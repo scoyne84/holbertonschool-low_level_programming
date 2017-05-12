@@ -18,14 +18,17 @@ int main(void)
 		{
 			putchar (tens);
 			putchar (ones);
-			if (tens != '9' && ones != '9')
+			if (tens == '9' && ones == '9')
 			{
-				putchar (',');
-				putchar (' ');
+				putchar ('\n');
 			}
-			tens = '0'; tens++;
+			else
+			putchar (',');
+			putchar (' ');
 			ones++;
 		}
+		ones = '0';
+		tens++;
 	}
 	return (0);
 }
