@@ -2,17 +2,19 @@
 /**
  * _islower - check the code for Holberton School students.
  * @c: variable representing letter to be tested.
- * Return: Always 0.
+ * Return: .
  */
 int _islower(int c)
 {
+	int result;
+
 	if (c >= 'a' && c <= 'z')
 	{
-		_putchar('1');
+		result = 1;
 	}
 	else
 	{
-		_putchar('0');
+		result = 0;
 	}
-	return (0);
+	return (result);
 }
