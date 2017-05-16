@@ -10,7 +10,7 @@ int _abs(int y)
 {
 	int result;
 
-	if (y == 0)
+	if (y == '0')
 	{
 		result = '0';
 	}
