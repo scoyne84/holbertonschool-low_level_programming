@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * add - add variables.
  * @x: variable x for addition.
  * @y: variable y for addition.
  * Return: result.
