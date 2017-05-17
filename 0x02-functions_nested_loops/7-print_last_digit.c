@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_last_digit - print the last digit of a given variable..
  * @x: integer being tested
  * Return: lastn
  */
