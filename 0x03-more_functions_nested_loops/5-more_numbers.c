@@ -1,0 +1,29 @@
+#include "holberton.h"
+
+/**
+ * more_numbers - prints the range 10x.
+ *
+ * Return: void.
+ */
+void more_numbers(void)
+{
+	int count;
+	int x, a, b;
+
+	for (count = 1; count <= 10; count++)
+	{
+		for (x = 0; x <= 14; x++)
+		{
+			a = x % 10;
+			b = x / 10;
+
+			if (x > 9)
+			{
+				_putchar(b + '0');
+			}
+			_putchar(a + '0');
+		}
+		_putchar('\n');
+	}
+}
+
