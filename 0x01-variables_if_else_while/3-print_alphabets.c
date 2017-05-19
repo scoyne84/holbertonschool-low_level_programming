@@ -7,7 +7,16 @@
 
 int main(void)
 {
-	char az;
-	if (az == z)
+	char x;
+
+	for (x = 'a'; x <= 'z'; x++)
 	{
-		putchar()
+		putchar(x);
+	}
+	for (x = 'A'; x <= 'Z'; x++)
+	{
+		putchar(x);
+	}
+	putchar('\n');
+return (0);
+}
