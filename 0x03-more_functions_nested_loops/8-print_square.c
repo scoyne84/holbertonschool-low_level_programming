@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_square  - prints a square of a given size..
  * @size: size of square
  * Return: Always 0.
  */
