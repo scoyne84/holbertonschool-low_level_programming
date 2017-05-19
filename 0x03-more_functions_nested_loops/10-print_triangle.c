@@ -13,23 +13,26 @@ void print_triangle(int size)
 	int j;
 	int k;
 
-	if (size == '0')
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
-	for (i = 1; i <= size; i++)
+	else
 	{
-		spaces = (size - i);
-		amp = (size - spaces);
+		for (i = 1; i <= size; i++)
+		{
+			spaces = (size - i);
+			amp = (size - spaces);
 
-		for (j = 1; j <= spaces; j++)
-		{
-			_putchar(' ');
+			for (j = 1; j <= spaces; j++)
+			{
+				_putchar(' ');
+			}
+			for (k = 1; k <= amp; k++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-		for (k = 1; k <= amp; k++)
-		{
-			_putchar('#');
-		}
-		_putchar('\n');
 	}
 }
