@@ -1,12 +1,17 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * _strlen - prints the length of the given string.
  * @s: variable representing string
- * Return: void.
+ * Return: always success.
  */
 int _strlen(char *s)
 {
-	int length;
+	int a = 0;
 
-	length = 
+	while (s[a])
+	{
+		a++;
+	}
+	return (a);
+}
