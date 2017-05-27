@@ -9,9 +9,9 @@ char *cap_string(char *s)
 {
 	int i;
 	int j;
-	char a[] = " ,;.!?\"(){}";
+	char a[] = " \t\n,;.!?\"(){}";
 
-	while (s[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] >= 'a' && s[i] <= 'z')
 		{
@@ -21,16 +21,14 @@ char *cap_string(char *s)
 			}
 			else
 			{
-				while (a[j] != '\0')
+				for (j = 0; a[j] != '\0'; j++)
 				{
 					if (a[j] == s[i - 1])
 					{
 						s[i] -= ('a' - 'A');
 					}
-				j++;
 				}
 			}
-			i++;
 		}
 	}
 	return (s);
