@@ -8,12 +8,12 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	char scan;
+	char *scan;
 	int x, y;
 
 	while ((x = *s++) != 0)
 	{
-		for (scan = accept; (y = scan++) != 0;)
+		for (scan = accept; (y = *scan++) != 0;)
 		{
 			if (y == x)
 			{
