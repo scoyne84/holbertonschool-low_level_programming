@@ -19,3 +19,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 int main(int argc __attribute__((unused)), char *argv[]);
+int main(int argc, char *argv[] __attribute__((unused)));
