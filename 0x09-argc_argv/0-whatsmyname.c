@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints program name 
+ * main - prints program name
  * @argc: arguments passed
  * @argv: array that holds string values
  */
