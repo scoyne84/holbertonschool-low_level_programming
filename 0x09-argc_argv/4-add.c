@@ -1,25 +1,20 @@
-#include <ctype.h>
 #include <stdlib.h>
 #include <stdio.h>
-
+/**
+ * main - adds positive numbers
+ * @argc: arguments passed to program
+ * @argv: values of pointers to arguments
+ * Return: always 0.
+ */
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int i, j;
-	int sum = 0;
+	int x, y, result;
 
-	for(i = 1; i < argc; i++)
+	for (x = 1; x < argc; x++)
 	{
-		for( j = 0; argv[i][j] != '\0'; j++)
-		{
-			if(!isdigit(argv[i][j]))
-			{
-				printf("Error\n");
-				return (1);
-			}
-			sum += atoi(argv[i]);
-		}
-
+		y = atoi(argv[x]);
+		result += y;
 	}
-printf("%i\n", sum);
-return(0);
+	printf("%d\n", result);
+	return (0);
 }
