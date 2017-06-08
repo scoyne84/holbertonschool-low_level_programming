@@ -17,6 +17,7 @@ int _strlen(char *str)
 	}
 	return (0);
 }
+
 /**
  * str_concat - concatenates two strings
  * @s1: string one
