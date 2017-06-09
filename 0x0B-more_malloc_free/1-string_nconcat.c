@@ -15,11 +15,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = " ";
 	}	
 	if (s2 == NULL)
 	{
-		return (NULL);
+		s2 = " ";
 	}	
 	for (a = 0; s1[a]; a++)
 		;
@@ -43,5 +43,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		p[c + a] = s2[c];
 	}	
 	p[a + b] = '\0';
-return (p);
+	return (p);
 }
