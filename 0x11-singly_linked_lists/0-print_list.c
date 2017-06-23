@@ -7,11 +7,11 @@
  */
 size_t print_list(const list_t *h)
 {
-	int y;
+	unsigned int y;
 
 	for (y = 0; h != NULL; y++)
 	{
-		printf("[%i] %s\n", h->len, h->str);
+		printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
 	}
 	return (y);
