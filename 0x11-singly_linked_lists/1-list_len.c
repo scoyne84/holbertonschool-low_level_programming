@@ -1,9 +1,8 @@
 #include "lists.h"
-
-/**                                                                                                                                                          
- * print_list - prints all the elements of a list_t list
+/**
+ * list_len - prints all the elements of a list_t list
  * @h: pointer to list of data
- * Return: number of elements in list                                                                                                                        
+ * Return: number of elements in list
  */
 size_t list_len(const list_t *h)
 {
