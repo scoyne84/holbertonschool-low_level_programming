@@ -6,11 +6,11 @@
  */
 size_t list_len(const list_t *h)
 {
-        unsigned int y;
+	unsigned int y;
 
-        for (y = 0; h != NULL; y++)
-        {
-                h = h->next;
-        }
-        return (y);
+	for (y = 0; h != NULL; y++)
+	{
+		h = h->next;
+	}
+	return (y);
 }
