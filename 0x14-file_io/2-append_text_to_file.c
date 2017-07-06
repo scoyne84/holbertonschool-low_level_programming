@@ -19,10 +19,18 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	fd = open(filename, O_RDONLY | O_WRONLY)
-		if (fd == -1)
-		{
-			return (-1);
-		}
-
+	fd = open(filename, O_RDONLY | O_WRONLY);
+	if (fd == -1)
+	{
+		return (-1);
+	}
+	for (length = 0; text_content && text_content[length]; length++)
+		;
+	if (text_content && length)
+		close(fd);
+	if (file == -1)
+	{
+		return (-1);
+	}
+	return (1);
 }
