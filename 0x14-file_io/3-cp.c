@@ -3,10 +3,10 @@
 #include "holberton.h"
 
 /**
- * main -
- * @argc:
- * @argv:
- * return:
+ * main - copies the content of a file to another file.
+ * @argc: argument one from user
+ * @argv: argument two from user
+ * return: 0 upon success, -1 for failure or NULL.
  */
 int main(int argc, char *argv[])
 {
@@ -16,12 +16,12 @@ int main(int argc, char *argv[])
 	fd1 = open(argv[1], O_RDONLY);
 	if (fd1 == -1)
 	{
-		if_error1(fd1);
+		if_error2(fd1);
 	}
 	fd2 = open(argv[2], O_CREATE);
 	if (fd2 == -1)
 	{
-		if_error2(fd2);
+		if_error3(fd2);
 	}
 	do{
 		r_count = read(fd1, buff, 1204);
@@ -31,12 +31,12 @@ int main(int argc, char *argv[])
 			ret1 = close(fd1);
 			if (ret1 == -1)
 			{
-				if_error1(fd1);
+				if_error4(fd1);
 			}
 			ret2 = close(fd2);
 			if (ret2 == -1)
 			{
-				if_error2(fd2);
+				if_error4(fd2);
 			}
 			if_error3(argv[2]);
 		}
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 	}
 	close(fd2);
 	{
-		if_error5(fd2);
+		if_error4(fd2);
 	}
 	return(0);
 }
