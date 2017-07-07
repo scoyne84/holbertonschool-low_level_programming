@@ -12,5 +12,11 @@ int _putchar(char c);
 ssize_t read_textfile(const char *filename, size_t letters);
 int create_file(const char *filename, char *text_content);
 int append_text_to_file(const char *filename, char *text_content);
+void if_error1(int);
+void if_error2(int);
+void if_error3(int);
+void if_error4(int);
+void if_error5(int);
+void if_error6(char **argv[]);
 
 #endif
