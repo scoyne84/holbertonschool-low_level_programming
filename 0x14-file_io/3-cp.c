@@ -14,6 +14,10 @@ int main(int argc, char *argv[])
 	char buff[1204];
 	int r_count, w_count;
 
+	if (argc != 3)
+	{
+	  if_error1();
+	}
 	fd1 = open(argv[1], O_RDONLY);
 	if (fd1 == -1)
 	{
@@ -41,7 +45,7 @@ int main(int argc, char *argv[])
 			}
 			if_error6(argv[2]);
 		}
-	} while (r_count != 0 || r_count != -1)
+	} while (r_count != 0 || r_count != -1);
 	close(fd1);
 	{
 		if_error4(fd1);
